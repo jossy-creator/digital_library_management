@@ -60,7 +60,7 @@ while True:
     if n==1:
         while True:
             add_books()
-            g=int(input("Do you add more books(y/n):"))
+            g=input("Do you add more books(y/n):")
             if g=="y":
                 continue
             else:
@@ -69,7 +69,7 @@ while True:
     elif n==2:
         while True:
             update_books()
-            g=int(input("Do you add more books(y/n):"))
+            g=input("Do you add more books(y/n):")
             if g=="y":
                 continue
             else:
@@ -78,7 +78,7 @@ while True:
     elif n==3:
         while True:
             delete_books()
-            g=int(input("Do you add more books(y/n):"))
+            g=input("Do you add more books(y/n):")
             if g=="y":
                 continue
             else:
@@ -88,7 +88,7 @@ while True:
     elif n==4:
         while True:
             display_details()
-            g=int(input("Do you add more books(y/n):"))
+            g=input("Do you add more books(y/n):")
             if g=="y":
                 continue
             else:
@@ -98,7 +98,7 @@ while True:
     elif n==5:
         while True:
             add_column()
-            g=int(input("Do you add more books(y/n):"))
+            g=input("Do you add more books(y/n):")
             if g=="y":
                 continue
             else:
@@ -181,7 +181,7 @@ while True:
     if n==1:
         while True:
             add_customerdetails()
-            g=int(input("Do you add more books(y/n):"))
+            g=input("Do you add more books(y/n):")
             if g=="y":
                 continue
             else:
@@ -190,7 +190,7 @@ while True:
     elif n==2:
         while True:
             update_customerdetails()
-            g=int(input("Do you add more books(y/n):"))
+            g=input("Do you add more books(y/n):")
             if g=="y":
                 continue
             else:
@@ -199,7 +199,7 @@ while True:
     elif n==3:
         while True:
             delete_customerdetails()
-            g=int(input("Do you add more books(y/n):"))
+            g=input("Do you add more books(y/n):")
             if g=="y":
                 continue
             else:
@@ -220,7 +220,7 @@ while True:
             if x=='a':
                 while True:
                     display_name()
-                    g=int(input("Do you add more books(y/n):"))
+                    g=input("Do you add more books(y/n):")
                     if g=="y":
                         continue
                     else:
@@ -229,7 +229,7 @@ while True:
             elif x=='b':
                 while True:
                     display_booksissue()
-                    g=int(input("Do you add more books(y/n):"))
+                    g=input("Do you add more books(y/n):")
                     if g=="y":
                         continue
                     else:
@@ -238,7 +238,7 @@ while True:
             elif x=='c':
                 while True:
                     display_date_of_issue()
-                    g=int(input("Do you add more books(y/n):"))
+                    g=input("Do you add more books(y/n):")
                     if g=="y":
                         continue
                     else:
@@ -247,7 +247,7 @@ while True:
             elif x=='d':
                 while True:
                     display_date_of_return()
-                    g=int(input("Do you add more books(y/n):"))
+                    g=input("Do you add more books(y/n):")
                     if g=="y":
                         continue
                     else:
@@ -256,7 +256,7 @@ while True:
             elif x=='e':
                 while True:
                     display_all()
-                    g=int(input("Do you add more books(y/n):"))
+                    g=input("Do you add more books(y/n):")
                     if g=="y":
                         continue
                     else:
