@@ -37,9 +37,10 @@ def update_books():
     print("Successfully updated!")
 
 def display_details():
-    j=int(input("Enter the bookid:"))
-    q="select * from library where bookid={}".format(j)
-    mycur.execute(q)
+  j = int(input("Enter the bookid: "))
+  q = "select * from library where bookid={}".format(j)
+  mycur.execute(q)
+  record = mycur.fetchone()
 
 def add_column():
     k=input("Enter the coloumn name:")
@@ -108,7 +109,7 @@ while True:
         print("Invalid code! Try again!")
 
 
-j="create table customer_details(bid int,cid int,cname varchra(100),books_issued int,date_of_issue date,date_of_return date)"
+j="create table customer_details(bid int,cid int,cname varchar(100),books_issued int,date_of_issue date,date_of_return date)"
 mycur.execute(j)
 print("Table created sucessfully!")
 
@@ -121,7 +122,7 @@ def add_customerdetails():
         n=int(input("Enter the no.of books issued by the customer:"))
         k=input("Enter the date.of books issued by the customer:")
         l=input("Enter the date.of books issued by the customer:")
-        klm="insert into book_details values({},{},'{}',{},'{}','{}')".format(Bookid,Cid,Cname,n,k,l)
+        klm="insert into customer_details values({},{},'{}',{},'{}','{}')".format(Bookid,Cid,Cname,n,k,l)
         mycur.execute(klm)
         mycon.commit()
         print("Successfully added!")
@@ -216,7 +217,7 @@ while True:
             print("e. display all the records")
             print("=====================")
 
-            x=int(input("Enter the value:"))
+            x = input("Enter the value:").lower()
             if x=='a':
                 while True:
                     display_name()
